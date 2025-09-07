@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BAJA SAE</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.152.0/examples/js/controls/OrbitControls.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+  <div class="logo">BAJA SAE</div>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#team">Time</a></li>
+      <li><a href="#vehicle">Veículo</a></li>
+      <li><a href="#gallery">Galeria</a></li>
+      <li><a href="#sponsors">Patrocinadores</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="home-section">
+  <div class="intro">
+    <h1>Bem-vindo ao Projeto BAJA SAE</h1>
+    <p>Explorando tecnologia, resistência e inovação em cada corrida!</p>
+  </div>
+  <div id="vehicle-3d" class="vehicle-3d"></div>
+</section>
+
+<section id="team">
+  <h2>Nosso Time</h2>
+  <div class="team-members">
+    <div class="member">
+      <img src="images/alunooliver.jpg" alt="Integrante 1">
+      <h3>Oliver Santos</h3>
+      <p>Engenharia de Software</p>
+    </div>
+    <div class="member">
+      <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Integrante 2">
+      <h3>Naiane</h3>
+      <p>**</p>
+    </div>
+    <div class="member">
+      <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Integrante 3">
+      <h3>Breno Monteiro</h3>
+      <p>**</p>
+    </div>
+        <div class="member">
+      <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Integrante 4">
+      <h3>Adrian</h3>
+      <p>**</p>
+    </div>
+        <div class="member">
+      <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Integrante 5">
+      <h3>Leonardo Vinicius</h3>
+      <p>**</p>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section id="vehicle">
+  <h2>Ficha Técnica do Veículo</h2>
+  <div class="vehicle-image">
+    <img src="images/prototipobaja.png" alt="Veículo BAJA SAE">
+  <div class="vehicle-specs">
+    <div class="spec"><h3>Motor</h3><p>Honda GX 160cc</p></div>
+    <div class="spec"><h3>Transmissão</h3><p>Manual, 3 velocidades</p></div>
+    <div class="spec"><h3>Pneus</h3><p>Off-Road 21x7x10</p></div>
+    <div class="spec"><h3>Suspensão</h3><p>Independente, braços triangulares</p></div>
+    <div class="spec"><h3>Chassi</h3><p>Aço tubular SAE 1010</p></div>
+    <div class="spec"><h3>Gaiola</h3><p>**</p></div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Galeria</h2>
+  <div class="gallery-container">
+    <img src="images/prototipobaja.png" alt="Galeria 1" class="gallery-item active">
+    <img src="images/prototipobaja.png" alt="Galeria 2" class="gallery-item">
+    <img src="images/projetotipobaja3.jpg" alt="Galeria 3" class="gallery-item">
+  </div>
+  <div class="gallery-controls">
+    <button id="prev">◀</button>
+    <button id="next">▶</button>
+  </div>
+
+<section id="budget">
+  <h2>Orçamento & Regulamento</h2>
+  <div class="budget-info">
+    <div class="budget-values">
+      <h3>Valores Estimados</h3>
+      <ul>
+        <li><strong>Chassi:</strong> R$ 2.500,00</li>
+        <li><strong>Motor:</strong> R$ 1.800,00</li>
+        <li><strong>Suspensão:</strong> R$ 1.200,00</li>
+        <li><strong>Pneus:</strong> R$ 900,00</li>
+        <li><strong>Transmissão:</strong> R$ 1.000,00</li>
+        <li><strong>Elétrica:</strong> R$ 700,00</li>
+<li><strong>Total estimado:</strong> <span class="budget-total">R$ 8.100,00 <i class="fa-solid fa-eye"></i></span></li>
+
+
+      </ul>
+    </div>
+
+    <div class="regulation">
+      <h3>Principais Exigências do Regulamento BAJA SAE</h3>
+      <ul>
+        <li>Motor padrão Honda GX 160cc</li>
+        <li>Estrutura tubular em aço SAE 1010</li>
+        <li>Suspensão independente</li>
+        <li>Dispositivo de segurança: cinto de 4 pontos, extintor e proteção lateral</li>
+        <li>Documentação técnica completa</li>
+        <li>Testes de segurança e desempenho</li>
+        <li>Limite de peso e dimensões conforme regulamento oficial</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</section>
+<section id="sponsors">
+  <h2>Patrocinadores & Apoio</h2>
+  <p class="sponsors-desc">
+    Nosso projeto é possível graças ao apoio de instituições e empresas que acreditam na inovação, engenharia e no potencial dos nossos alunos. Conheça quem impulsiona o BAJA SAE!
+  </p>
+  <div class="sponsor-logos">
+    <a href="https://www.unicuritiba.edu.br/" target="_blank" rel="noopener">
+      <img src="images/logounicuritiba.png" alt="Unicuritiba">
+    </a>
+  </div>
+  <div class="sponsor-info">
+    <h3>Sobre a Unicuritiba</h3>
+    <p>
+      Fundada em 1950, a Unicuritiba é uma das instituições de ensino superior mais tradicionais do Paraná, reconhecida pela excelência acadêmica e pelo incentivo à pesquisa, inovação e desenvolvimento profissional. Ao longo de sua história, a Unicuritiba tem contribuído para a formação de milhares de profissionais, apoiando projetos estudantis e iniciativas que promovem o avanço da engenharia e da tecnologia no Brasil.
+    </p>
+  </div>
+</section>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contato</h2>
+  <form>
+    <input type="text" placeholder="Seu nome" required>
+    <input type="email" placeholder="Seu email" required>
+    <textarea placeholder="Mensagem" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 - Projeto BAJA SAE</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
